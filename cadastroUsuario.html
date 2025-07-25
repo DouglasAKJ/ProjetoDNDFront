@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="stylecrud.css">
     <title>Cadastro</title>
 </head>
 <body>
+    <main class="formulario">
     <h1>Cadastro de Usuário</h1>
     <form id="formCadastro">
-        <input type="text" name="emailUser" id="emailUser" placeholder="Email" required>
-        <input type="text" name="nomeUser" id="nomeUser" placeholder="Nome" required>
-        <input type="password" name="senhaUser" id="senhaUser" placeholder="Senha" required>
-        <input type="submit" value="Cadastrar">
+        <input type="text" name="emailUser" id="emailUser" placeholder="Email" class="input" required>
+        <input type="text" name="nomeUser" id="nomeUser" placeholder="Nome" class="input" required>
+        <input type="password" name="senhaUser" id="senhaUser" placeholder="Senha" class="input" required>
+        <input type="submit" class="input" value="Cadastrar">
     </form>
     <button onclick="window.location.href= 'loginUsuario.html'">Login</button>
     <button onclick="window.location.href= 'controle-iniciativa.html'">Controle de iniciativa</button>
+    </main>
     <script src="scriptCadastro.js"></script>
 </body>
 </html>

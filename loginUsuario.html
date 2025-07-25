@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylecrud.css">
     <title>Login</title>
 </head>
 <body>
-    <main>
+    <main class="formulario">
     <h1>Login de Usuário</h1>
     <form id="formLogin">
-        <input type="text" name="emailUser" id="emailUser" placeholder="Email">
-        <input type="password" name="senhaUser" id="senhaUser" placeholder="Senha">
-        <input type="submit" value="Login">
+        <input type="text" name="emailUser" id="emailUser" class="input" placeholder="Email">
+        <input type="password" name="senhaUser" id="senhaUser" class="input" placeholder="Senha">
+        <input type="submit" class="input" value="Login">
     </form>
     <button onclick="window.location.href= 'cadastroUsuario.html'">Cadastrar</button>
     <button onclick="window.location.href= 'controle-iniciativa.html'">Controle de iniciativa</button>
