@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="voltar">Voltar</button>
+    <div class="centralizar coluna">
+    <h1>Ficha Dungeons & Dragons</h1>
+    <pre id="content"></pre>
+    <main class="">
+        <h3 class="centralizar">Atributos</h3>
+        <div class=" linha2 centralizar2">
+            <div class="coluna centralizar">
+                <label for="forcaMod">Força</label>
+                <input type="number" name="forcaMod" id="forcaMod" class="input input-grande">
+                <input type="number" name="forca" id="forca" class="inputAtributo">
+                <input type="number" name="forcaSave" id="forcaSave" class="input-save">
+                <input type="checkbox" name="forcaCheck" id="forcaCheck">
+            </div>
+            
+            <div class="coluna centralizar">
+                <label for="destrezaMod">Destreza</label>
+                <input type="number" name="destrezaMod" id="destrezaMod" class="input input-grande">
+                <input type="number" name="destreza" id="destreza" class="inputAtributo">
+                <input type="number" name="dexSave" id="dexSave" class=" input-save">
+                <input type="checkbox" name="dexCheck" id="dexCheck">
+            </div>
+            
+            <div class="coluna centralizar">
+                <label for="constituicaoMod">Constituição</label>
+                <input type="number" name="constituicaoMod" id="constituicaoMod" class="input input-grande">
+                <input type="number" name="constituicao" id="constituicao"  class="inputAtributo">
+                <input type="number" name="consSave" id="consSave" class=" input-save">
+                <input type="checkbox" name="consCheck" id="consCheck">
+            </div>
+
+            <div class="coluna centralizar">
+                <label for="inteligenciaMod">Inteligência</label>
+                <input type="number" name="inteligenciaMod" id="inteligenciaMod" class="input input-grande">
+                <input type="number" name="inteligencia" id="inteligencia" class="inputAtributo">
+                <input type="number" name="intSave" id="intSave" class=" input-save">
+                <input type="checkbox" name="intCheck" id="intCheck">
+            </div>
+
+            <div class="coluna centralizar">
+                 <label for="sabedoriaMod">Sabedoria</label>
+                <input type="number" name="sabedoriaMod" id="sabedoriaMod" class="input input-grande">
+                <input type="number" name="sabedoria" id="sabedoria" class="inputAtributo">
+                <input type="number" name="sabSave" id="sabSave" class=" input-save">
+                <input type="checkbox" name="sabCheck" id="sabCheck">
+            </div>
+
+            <div class="coluna centralizar">
+                <label for="carismaMod">Carisma</label>
+                <input type="number" name="carismaMod" id="carismaMod" class="input input-grande">
+                <input type="number" name="carisma" id="carisma" class="inputAtributo">
+                <input type="number" name="carismaSave" id="carismaSave" class=" input-save">
+                <input type="checkbox" name="carCheck" id="carCheck">
+            </div>
+
+
+           
+
+        </div>
+
+        <br><br><br>
+        
+        <div class="linha centralizar stretch" style="border: solid 1px black;"> 
+        <section class=" coluna">
+            <h3>Perícias</h3>
+            <div class="linha">
+            <input  type="checkbox" name="acrobaciaProf" id="acrobaciaProf">
+            <input  type="number" name="acrobacia" id="acrobacia" class="input ">
+            <label  for="acrobacia">Acrobacia(Destreza)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="arcanismoProf" id="arcanismoProf">
+            <input type="number" name="arcanismo" id="arcanismo" class="input">
+            <label for="arcanismo">Arcanismo(Inteligência)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="atletismoProf" id="atletismoProf" >
+            <input type="number" name="atletismo" id="atletismo" class="input">
+            <label for="atletismo">Atletismo(Força)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="atuacaoProf" id="atuacaoProf">
+            <input type="number" name="atuacao" id="atuacao" class="input">
+            <label for="atuacao">Atuação(Carisma)</label>
+            </div>
+            <br><div class="linha">
+            <input type="checkbox" name="enganacaoProf" id="enganacaoProf">
+            <input type="number" name="enganacao" id="enganacao" class="input">
+            <label for="enganacao">Enganação(Carisma)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="furtividadeProf" id="furtividadeProf">
+            <input type="number" name="furtividade" id="furtividade" class="input">
+            <label for="furtividade">Furtividade(Destreza)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="historiaProf" id="historiaProf">
+            <input type="number" name="historia" id="historia" class="input">
+            <label for="historia">História(Inteligência)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="intimidacaoProf" id="intimidacaoProf">
+            <input type="number" name="intimidacao" id="intimidacao" class="input">
+            <label for="intimidacao">Intimidação(Carisma)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="intuicaoProf" id="intuicaoProf">
+            <input type="number" name="intuicao" id="intuicao" class="input">
+            <label for="intuicao">Intuição(Sabedoria)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="investigacaoProf" id="investigacaoProf">
+            <input type="number" name="investigacao" id="investigacao" class="input">
+            <label for="investigacao">Investigação(Inteligência)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="lidaranimaisProf" id="lidaranimaisProf">
+            <input type="number" name="lidaranmais" id="lidaranimais" class="input">
+            <label for="lidaranimais">Lidar com Animais(Sabedoria)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="medicinaProf" id="medicinaProf">
+            <input type="number" name="medicina" id="medicina" class="input">
+            <label for="medicina">Medicina(Inteligência)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="naturezaProf" id="naturezaProf">
+            <input type="number" name="natureza" id="natureza" class="input">
+            <label for="natureza">Natureza(Inteligência)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="percepcaoProf" id="percepcaoProf">
+            <input type="number" name="percepcao" id="percepcao" class="input">
+            <label for="percepcao">Percepção(Sabedoria)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="persuasaoProf" id="persuasaoProf">
+            <input type="number" name="persuasao" id="persuasao" class="input">
+            <label for="persuasao">Persuasão(Carisma)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="prestidigitacaoProf" id="prestidigitacaoProf">
+            <input type="number" name="prestidigitacao" id="prestidigitacao" class="input">
+            <label for="prestidigitacao">Prestidigitação(Destreza)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="religiaoProf" id="religiaoProf">
+            <input type="number" name="religiao" id="religiao" class="input">
+            <label for="religiao">Religião(Inteligência)</label>
+            </div>
+            <br>
+            <div class="linha">
+            <input type="checkbox" name="sobrevivenciaProf" id="sobrevivenciaProf">
+            <input type="number" name="sobrevivencia" id="sobrevivencia" class="input">
+            <label for="sobrevivencia">Sobrevivência(Sabedoria)</label>
+            </div>
+            
+        </section>
+            <div class="coluna" style="border: solid 1px black;">
+                <div class="linha centralizar ">
+                    <div class="coluna centralizar">
+                        <label for="ca">CA</label>
+                        <input type="number" name="ca" id="ca" class="input input-grande">
+                    </div>
+                    <div class="coluna centralizar">
+                        <label for="iniciativa">Iniciativa</label>
+                        <input type="number" name="iniciativa" id="iniciativa" class="input input-grande">
+                    </div>
+                    <div class="coluna centralizar">
+                        <label for="deslocamento">Deslocamento</label>
+                        <input type="number" name="deslocamento" id="deslocamento" class="input input-grande">
+                    </div>
+                </div>
+                
+                <div class="coluna" style="flex: 0;">
+                    <div class="linha centralizar">
+                     <label for="vidaAtual">HP</label>
+                    <h4><input type="number" name="hpAtual" id="hpAtual" class="input"></h4><h4>/</h4><h4><input type="number" name="hpMax" id="hpMax" class="input"></h4>
+                    </div>
+                    <p class="centralizar">Temporários</p>
+                    <div class="centralizar coluna" style="flex: 0">
+                    <input type="number" name="hpTemp" id="hpTemp" class="input ">
+                    <br>
+                    <div class="linha">
+                    <button type="button" id="dano">Dano</button>
+                    <input type="number" name="vidaAltera" id="vidaAltera" class="input input-grande">
+                    <button type="button" id="cura">Cura</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="linha" style="justify-content: space-around; margin: 10px;">
+                    <button type="button" id="combat-btn">Combate</button>
+                    <button type="button" id="spell-btn">Magias</button>
+                    <button type="button" id="inv-btn">Inventário</button>
+                </div>
+                <div id="nav-ataque2">
+                    <div id="nav-ataque">
+                        <p>Ataque</p>
+                        <div class="linha">
+                        </div>
+                    </div>
+                    <button type="button" id="add-botao" onclick="addAtaque()">+</button>
+                </div>
+
+                <div id="nav-inventario" class="centralizar">
+                    <textarea name="inv" id="inv" cols="30" rows="30"></textarea>
+                </div>
+
+                <div id="nav-spells">
+                    <p>Spells</p>
+                    <label for="cdMagia">CD: </label>
+                    <input type="number" id="cdMagia" name="cdMagia">
+                    <div>
+                        <h4>Truques</h4>
+                        
+                        <div id="truques">
+
+                        </div>
+
+                        <button type="button" class="add-spell" onclick="abrirModal(0)">+</button>
+
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                            <span class="fechar" onclick="fecharModal()">&times;</span>
+                            <h2>Selecionar Spell</h2>
+                            
+                           <form id="formTruque">
+                            
+                                <select name="selectSpell" id="selectSpell">
+                                    <option value="">-- Selecione um spell -- </option>
+                                </select>
+                            
+                                <label for="castingTime" class="input-spell">Casting Time:</label>
+                                <input type="text" name="castingTime" id="castingTime" class="input-">
+                            
+                                <label for="range" class="input-spell">Range:</label>
+                                <input type="text" name="range" id="range">
+                            
+                                <label for="desc" class="input-spell">Descrição:</label>
+                                <textarea type="text" name="desc" id="desc" rows="14" cols="45"></textarea>
+
+                                <input type="number" id="levelSpell" name="levelSpell" style="display: none;">
+                                
+
+                            <button type="button" onclick="salvarCantrip()">Salvar</button>
+                            </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h4>Nivel 1</h4>
+                        <div id="level1">
+
+                        </div>
+                        <button type="button" class="add-spell" onclick="abrirModal(1)">+</button>
+                    </div>
+                    <div>
+                        <h4>Nivel 2</h4>
+                        <div id="level2">
+
+                        </div>
+                        <button type="button" onclick="abrirModal(2)">+</button>
+                    </div>
+                    <div>
+                        <h4>Nivel 3</h4>
+                        <div id="level3">
+
+                        </div>
+                        <button type="button" onclick="abrirModal(3)">+</button>
+                    </div>
+                    <div>
+                        <h4>Nivel 4</h4>
+                        <div id="level4">
+
+                        </div>
+                        <button type="button" onclick="abrirModal(4)">+</button>
+                    </div>
+                    <div>
+                        <h4>Nivel 5</h4>
+                        <div id="level5">
+
+                        </div>
+                        <button type="button" onclick="abrirModal(5)">+</button>
+                    </div>
+                    <div>
+                        <h4>Nivel 6</h4>
+                        <div id="level6">
+
+                        </div>
+                        <button type="button" onclick="abrirModal(6)">+</button>
+                    </div>
+                    <div>
+                        <h4>Nivel 7</h4>
+                        <div id="level7">
+
+                        </div>
+                        <button type="button" onclick="abrirModal(7)">+</button>
+                    </div>
+                    <div>
+                        <h4>Nivel 8</h4>
+                        <div id="level8">
+
+                        </div>
+                        <button type="button" onclick="abrirModal(8)">+</button>
+                    </div>
+                    <div>
+                        <h4>Nivel 9</h4>
+                        <div id="level9">
+                            
+                        </div>
+                        <button type="button" onclick="abrirModal(9)">+</button>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        <div class="coluna">
+        <div>
+            <div class="linha" style="margin-left: 5px;">
+            <p>Nome do jogador: </p>
+            <strong><p id="nomePlayer" style="font-size: 17px; margin-left: 5px;"></p></strong>
+            </div>
+            <div class="linha" style="margin-left: 5px;">
+            <label for="nomeChar">Nome do personagem:</label>
+            <input type="text" name="nomeChar" id="nomeChar" style="width: 100px; height: 15px;">
+            </div>
+            <div class="linha" style="margin-left: 5px; margin-top: 15px;">
+            <label for="classe">Classe:</label>
+            <input type="text" name="classe" id="classe" style="width: 100px; height: 15px;">
+            </div>
+            <div class="linha" style="margin-left: 5px; margin-top: 15px;">
+                <label for="raca">Raça:</label>
+                <input type="text" name="raca" id="raca" style="width: 100px; height: 15px;">
+            </div>
+            <div class="linha" style="margin-left: 5px; margin-top: 15px;">
+                <label for="nivel">Level: </label>
+                <input type="number" name="nivel" id="nivel" style="width: 30px;">
+                <label for="proficiencia" style="margin-left: 10px;">Proficiência: </label>
+                <input type="number" name="proficiencia" id="proficiencia" style="width: 30px;">
+            </div>
+            
+        </div>
+        <textarea rows="6" cols="50" name="ideais" id="ideais" placeholder="Aparência..."></textarea>
+        <textarea rows="6" cols="50" name="vinculos" id="vinculos" placeholder="Proficiencias e idiomas..."></textarea>
+        <textarea rows="6" cols="50" name="fraquzas" id="fraquezas" placeholder="Backgrounds e Lore..."></textarea>
+        <textarea rows="20" cols="50" name="caracteristicas" id="caracteristicas" placeholder="Caracteristícas e Talentos..."></textarea>
+        </div>
+    </div>
+</div>
+        
+                  
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

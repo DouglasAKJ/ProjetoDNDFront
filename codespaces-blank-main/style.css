@@ -1,0 +1,330 @@
+/* Estilos Gerais */
+body {
+    background-color: #3b2f2f; /* Um marrom escuro para o fundo geral */
+    background-image: url('https://www.transparenttextures.com/patterns/fabric-of-squares.png'); /* Nova URL para textura de madeira */
+    background-attachment: fixed;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 600; /* Fonte medieval. Você precisará importar esta fonte. */
+    color: #4a3a2d; /* Cor de texto que combine com o tema */
+}
+
+/* Importar a fonte medieval (exemplo com Google Fonts) */
+/* Adicione a seguinte linha no seu <head> no arquivo HTML:
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+*/
+
+/* Classes Flexbox */
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.linha2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3px;
+}
+
+.coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    /* Mantenha se for usar em algum lugar, mas não é estritamente necessário para este pedido */
+}
+
+/* Modal */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro para o modal */
+    transition: opacity 0.3s ease-in-out; /* Suaviza a transição do modal */
+}
+
+.modal-content {
+    background-color: #f8f0d8; /* Cor de pergaminho claro */
+    text-align: center;
+    padding: 25px 35px; /* Aumenta o padding */
+    width: 60%; /* Ajuste a largura conforme necessário */
+    max-width: 500px; /* Limite a largura máxima para modais menores */
+    border-radius: 12px; /* Bordas mais suaves */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra para destacar o modal */
+    border: 2px solid #6b4f3b; /* Borda para o modal */
+}
+
+#formTruque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Adiciona um pouco de padding ao formulário */
+}
+
+.modal.open {
+    opacity: 1;
+    z-index: 999;
+}
+
+.fechar {
+    float: right;
+    font-size: 28px; /* Ícone de fechar maior */
+    cursor: pointer;
+    color: #6b4f3b; /* Cor que combine com o tema */
+    transition: color 0.2s ease;
+}
+
+.fechar:hover {
+    color: #a0785a; /* Cor ao passar o mouse */
+}
+
+/* Inputs e Elementos de Formulário */
+.input-save {
+    min-width: 0;
+    padding: 5px; /* Mais padding para o input de salvar */
+    margin: 0;
+    font-size: 20px; /* Reduz um pouco o tamanho da fonte para melhor legibilidade */
+    margin-top: 10px;
+    width: 40px; /* Largura um pouco maior */
+    height: 40px; /* Altura um pouco maior */
+    text-align: center;
+    border: 2px solid #a0785a; /* Borda que destaca no pergaminho */
+    background-color: #ede2c9; /* Fundo mais claro para destaque */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra interna para profundidade */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.borda {
+    border: 2px solid #8b0000; /* Vermelho mais escuro para borda de erro/destaque */
+}
+
+.input,
+.inputAtributo {
+    width: 60px; /* Largura ajustada para inputs de atributos */
+    padding: 8px 5px; /* Padding para melhor visual */
+    text-align: center;
+    border: 2px solid #a0785a; /* Borda que destaca no pergaminho */
+    background-color: #ede2c9; /* Fundo mais claro para destaque */
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'MedievalSharp', cursive; /* Aplica a fonte medieval */
+    color: #4a3a2d;
+}
+
+.input-spell{
+    color: #4a3a2d;
+}
+
+.input-grande {
+    font-size: 36px; /* Ajuste para o tamanho da fonte grande */
+    padding: 10px 5px; /* Mais padding para inputs grandes */
+}
+
+/* Centralização */
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralizar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os atributos */
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+/* Seções da Ficha */
+main {
+background-color: #251e14;
+background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png"); /* Substitua pelo caminho da sua imagem de pergaminho */
+    border: 5px solid #6b4f3b; /* Borda mais grossa para a ficha */
+    border-radius: 15px; /* Bordas arredondadas para a ficha */
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+}
+
+h1, h3 {
+    font-family: 'MedievalSharp', cursive;
+    color: #d8d8d8; /* Cor mais escura para os títulos */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Leve sombra no texto */
+}
+
+label {
+    font-family: 'MedievalSharp', cursive;
+    color: #d8d8d8;
+    margin-bottom: 5px; /* Espaçamento entre label e input */
+}
+
+/* Botões */
+button {
+    background-color: #8b5e3a; /* Cor de botão mais amadeirada */
+    color: #fff;
+    border: 2px solid #6b4f3b;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #a0785a; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Textareas */
+textarea {
+    background-color: #ede2c9; /* Fundo de pergaminho para textareas */
+    border: 2px solid #a0785a;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'MedievalSharp', cursive;
+    color: #4a3a2d;
+    resize: vertical; /* Permite redimensionar verticalmente */
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; /* Espaçamento entre textareas */
+}
+
+/* Specific IDs */
+#nav-ataque2,
+#nav-spells,
+#nav-inventario {
+    background-color: rgba(255, 255, 255, 0.1); /* Um leve fundo transparente */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px dashed #a0785a; /* Borda pontilhada para seções */
+}
+
+#nav-ataque2 {
+    display: initial; /* Mantém o padrão */
+}
+
+#nav-spells {
+    display: none;
+}
+
+#nav-inventario {
+    display: none;
+}
+
+#spell-name,
+#spell-time,
+#spell-range,
+#cdMagia {
+    width: auto; /* Deixa a largura automática */
+    padding: 5px;
+    border: 2px solid #a0785a;
+    background-color: #ede2c9;
+    border-radius: 5px;
+    font-family: 'MedievalSharp', cursive;
+    color: #4a3a2d;
+}
+
+/* Inputs de Nome, Classe, Raça, Nível, Proficiência */
+input[type="text"],
+input[type="number"] {
+    background-color: #ede2c9;
+    border: 2px solid #a0785a;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'MedievalSharp', cursive;
+    color: #4a3a2d;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#nomeChar, #classe, #raca {
+    width: 150px !important; /* Aumenta a largura desses campos */
+    height: 25px !important; /* Aumenta a altura */
+}
+
+#nivel, #proficiencia {
+    width: 40px !important; /* Ajusta a largura para números */
+    text-align: center;
+}
+
+/* Títulos H4 dentro de nav-spells (Truques, Nível 1, etc.) */
+#nav-spells h4 {
+    color: #d8d8d8; /* Cor mais escura para os títulos de nível de magia */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a0785a; /* Linha de separação */
+    padding-bottom: 5px;
+}
+
+/* Select para Spells no Modal */
+#selectSpell {
+    width: 80%;
+    padding: 8px;
+    border: 2px solid #a0785a;
+    background-color: #ede2c9;
+    border-radius: 5px;
+    font-family: 'MedievalSharp', cursive;
+    color: #4a3a2d;
+    margin-bottom: 10px;
+    appearance: none; /* Remove o estilo padrão do select */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20256%20512%22%3E%3Cpath%20fill%3D%22%234a3a2d%22%20d%3D%22M208%20192H48c-17.7%200-32%2014.3-32%2032v32c0%2017.7%2014.3%2032%2032%2032h160c17.7%200%2032-14.3%2032-32v-32c0-17.7-14.3-32-32-32z%22/%3E%3C/svg%3E'); /* Ícone de seta personalizado */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* Melhorias para a seção de vida/HP */
+.coluna[style="flex: 0;"] { /* Seleciona a coluna de HP e temporários */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px dashed #a0785a;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+p{
+    color: #d8d8d8;;
+}
+
+#hpAtual, #hpMax {
+    width: 60px !important;
+    font-size: 25px !important;
+    height: 40px !important;
+    margin: 0 5px;
+}
+
+#vidaAltera {
+    width: 80px !important;
+    font-size: 30px !important;
+    height: 50px !important;
+}
+
+/* Espaçamento para as linhas de perícias */
+section.coluna > div.linha {
+    margin-bottom: 8px; /* Espaçamento entre cada perícia */
+}
+
+section.coluna label {
+    margin-left: 10px; /* Espaçamento entre o input e o label da perícia */
+}

@@ -1,0 +1,140 @@
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.linha2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3px;
+}
+
+
+.coluna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: fixed;
+    z-index: -1;
+    left: 0; top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    text-align: center;
+    padding: 15px 25px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+#formTruque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    opacity: 1;
+    z-index: 999;
+}
+
+.fechar {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.input-save{
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.borda {
+    border: 1px solid red ;
+}
+
+.input {
+    width: 50px;
+    
+}
+
+.inputAtributo {
+    width: 50px;
+    text-align: center;
+    
+}
+
+.centralizar {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centralizar2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.input-grande {
+    font-size: 40px;
+    text-align: center;
+}
+
+#nav-ataque2{
+    display: initial;
+}
+
+#nav-spells {
+    display: none;
+}
+
+#nav-inventario {
+    display: none;
+}
+
+#spell-name{
+    width: 80px;
+}
+
+#spell-time{
+    width: 80px;
+}
+
+#spell-range{
+    width: 40px;
+}
+
