@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async function(){
     if (!token){
         window.location.href = "loginUsuario.html"
     }
-    const response = await fetch("http://localhost:8080/usuarios/returnUsuario", {
+    const response = await fetch("https://projeto-dnd.onrender.com/usuarios/returnUsuario", {
         headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/json',
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
 
 document.addEventListener("DOMContentLoaded", async function(){
-    const response = await fetch("http://localhost:8080/usuarios/returnFichas", {
+    const response = await fetch("https://projeto-dnd.onrender.com/usuarios/returnFichas", {
         headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/json',
@@ -68,7 +68,7 @@ enviaFicha.addEventListener("click", async function(){
     const nome = document.getElementById("nome")
     const classe = document.getElementById("classe")
 
-    const response = await fetch("http://localhost:8080/ficha/criaficha", {
+    const response = await fetch("https://projeto-dnd.onrender.com/ficha/criaficha", {
         headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/json',
@@ -81,7 +81,7 @@ enviaFicha.addEventListener("click", async function(){
         })
     })
 
-    const response2 = await fetch("http://localhost:8080/usuarios/returnFichas", {
+    const response2 = await fetch("https://projeto-dnd.onrender.com/usuarios/returnFichas", {
         headers: {
             'Authorization': `Bearer ${token}`,
             'Accept': 'application/json',
