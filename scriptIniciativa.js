@@ -97,7 +97,7 @@ form.addEventListener("submit", async function(e){
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-            method: 'PATCH'
+            method: 'POST'
         })
         const iniciativas = await response.json();
         organizaIniciativa(iniciativas)
