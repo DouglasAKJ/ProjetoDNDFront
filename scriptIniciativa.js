@@ -83,7 +83,7 @@ form.addEventListener("submit", async function(e){
                 <button onclick="atualizarHP(${atacante.id})">Salvar HP</button>
                 <button onclick="moverCima(${index})">🔼</button>
                 <button onclick="moverBaixo(${index})">🔽</button>
-                <button onclikc="deletaId(${atacante.id}))">
+                <button onclikc="deletaId(${atacante.id}))">❌</button>
             
             `
             resultadoDiv.appendChild(newAtacante)   
