@@ -83,11 +83,24 @@ form.addEventListener("submit", async function(e){
                 <button onclick="atualizarHP(${atacante.id})">Salvar HP</button>
                 <button onclick="moverCima(${index})">🔼</button>
                 <button onclick="moverBaixo(${index})">🔽</button>
+                <button onclikc="deletaId(${atacante.id}))">
             
             `
             resultadoDiv.appendChild(newAtacante)   
 
         })
+    }
+
+    async function deletaId(id){
+        const response = await fetch(`https://projeto-dnd.onrender.com/iniciativa/deletaIniciativa/${id}`, {
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+            method: 'PATCH'
+        })
+        const iniciativas = await response.json();
+        organizaIniciativa(iniciativas)
     }
 
     async function atualizarHP(id){
