@@ -50,7 +50,6 @@ form.addEventListener("submit", async function(e){
             })
 
             const data = await response.json()
-            console.log(data)
 
             const response2 = await fetch("https://projeto-dnd.onrender.com/iniciativa", {
                 headers: {
