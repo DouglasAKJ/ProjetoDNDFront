@@ -2175,9 +2175,9 @@ function carregaAtaque(ataque, index){
 
 
 document.addEventListener("DOMContentLoaded", async function(){
-  /*if (!token){
+  if (!token){
         window.location.href = "loginUsuario.html"
-    }*/
+    }
   const res = await fetch(`https://projetodnd.duckdns.org/usuarios/returnUsuario`, {
     headers:
         {
