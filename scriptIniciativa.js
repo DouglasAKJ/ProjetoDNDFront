@@ -50,7 +50,6 @@ form.addEventListener("submit", async function(e){
             })
 
             const data = await response.json()
-            console.log(data)
 
             const response2 = await fetch("http://177.153.20.221:8080/iniciativa", {
                 headers: {
@@ -83,11 +82,24 @@ form.addEventListener("submit", async function(e){
                 <button onclick="atualizarHP(${atacante.id})">Salvar HP</button>
                 <button onclick="moverCima(${index})">🔼</button>
                 <button onclick="moverBaixo(${index})">🔽</button>
+                <button onclick="deletaId(${atacante.id})">❌</button>
             
             `
             resultadoDiv.appendChild(newAtacante)   
 
         })
+    }
+
+    async function deletaId(id){
+        const response = await fetch(`https://projeto-dnd.onrender.com/iniciativa/deletaIniciativa/${id}`, {
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+            method: 'POST'
+        })
+        const iniciativas = await response.json();
+        organizaIniciativa(iniciativas)
     }
 
     async function atualizarHP(id){
