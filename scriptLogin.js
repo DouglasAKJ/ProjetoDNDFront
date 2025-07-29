@@ -6,7 +6,7 @@ const formLogin = document.getElementById("formLogin")
 formLogin.addEventListener("submit", async function(e){
     e.preventDefault()
 
-    const response = await fetch(`https://projeto-dnd.onrender.com/auth/login`, {
+    const response = await fetch(`http://177.153.20.221:8080/auth/login`, {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'

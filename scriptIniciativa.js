@@ -4,7 +4,7 @@ let listaAtual = [];
 const botaoLimpar = document.getElementById("botaoLimpar")
 
 botaoLimpar.addEventListener("click", async function(){
-    const response = await fetch("https://projeto-dnd.onrender.com/iniciativa/deleta", {
+    const response = await fetch("http://177.153.20.221:8080/iniciativa/deleta", {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ botaoLimpar.addEventListener("click", async function(){
 })
 
 document.addEventListener("DOMContentLoaded", async function(){
-    const response2 = await fetch("https://projeto-dnd.onrender.com/iniciativa", {
+    const response2 = await fetch("http://177.153.20.221:8080/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ form.addEventListener("submit", async function(e){
             const nome = document.getElementById("nome").value;
             const iniciativa = document.getElementById("iniciativa").value;
             const hp = document.getElementById("hp").value;
-            const response = await fetch("https://projeto-dnd.onrender.com/iniciativa", {
+            const response = await fetch("http://177.153.20.221:8080/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ form.addEventListener("submit", async function(e){
             const data = await response.json()
             console.log(data)
 
-            const response2 = await fetch("https://projeto-dnd.onrender.com/iniciativa", {
+            const response2 = await fetch("http://177.153.20.221:8080/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -94,7 +94,7 @@ form.addEventListener("submit", async function(e){
         const hpInput = document.getElementById(`hp-${id}`);
         const novoHP = parseInt(hpInput.value);
 
-        await fetch(`https://projeto-dnd.onrender.com/iniciativa/${id}`, {
+        await fetch(`http://177.153.20.221:8080/iniciativa/${id}`, {
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -105,7 +105,7 @@ form.addEventListener("submit", async function(e){
             })
         })
 
-        const response = await fetch("https://projeto-dnd.onrender.com/iniciativa");
+        const response = await fetch("http://177.153.20.221:8080/iniciativa");
         const iniciativas = await response.json();
         organizaIniciativa(iniciativas);
     }
