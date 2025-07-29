@@ -7,7 +7,7 @@ const formLogin = document.getElementById("formLogin")
 formCadastro.addEventListener("submit", async function (e) {
     e.preventDefault(); // impede que o form recarregue a página
 
-    const response = await fetch("http://177.153.20.221:8080/auth/cadastro", {
+    const response = await fetch("https://projetodnd.duckdns.org/auth/cadastro", {
         method: "POST",
         headers: {
             'Accept': 'application/json',

@@ -4,7 +4,7 @@ let listaAtual = [];
 const botaoLimpar = document.getElementById("botaoLimpar")
 
 botaoLimpar.addEventListener("click", async function(){
-    const response = await fetch("http://177.153.20.221:8080/iniciativa/deleta", {
+    const response = await fetch("https://projetodnd.duckdns.org/iniciativa/deleta", {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ botaoLimpar.addEventListener("click", async function(){
 })
 
 document.addEventListener("DOMContentLoaded", async function(){
-    const response2 = await fetch("http://177.153.20.221:8080/iniciativa", {
+    const response2 = await fetch("https://projetodnd.duckdns.org/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ form.addEventListener("submit", async function(e){
             const nome = document.getElementById("nome").value;
             const iniciativa = document.getElementById("iniciativa").value;
             const hp = document.getElementById("hp").value;
-            const response = await fetch("http://177.153.20.221:8080/iniciativa", {
+            const response = await fetch("https://projetodnd.duckdns.org/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ form.addEventListener("submit", async function(e){
 
             const data = await response.json()
 
-            const response2 = await fetch("http://177.153.20.221:8080/iniciativa", {
+            const response2 = await fetch("https://projetodnd.duckdns.org/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -91,7 +91,7 @@ form.addEventListener("submit", async function(e){
     }
 
     async function deletaId(id){
-        const response = await fetch(`https://projeto-dnd.onrender.com/iniciativa/deletaIniciativa/${id}`, {
+        const response = await fetch(`https://projetodnd.duckdns.org/iniciativa/deletaIniciativa/${id}`, {
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -106,7 +106,7 @@ form.addEventListener("submit", async function(e){
         const hpInput = document.getElementById(`hp-${id}`);
         const novoHP = parseInt(hpInput.value);
 
-        await fetch(`http://177.153.20.221:8080/iniciativa/${id}`, {
+        await fetch(`https://projetodnd.duckdns.org/iniciativa/${id}`, {
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -117,7 +117,7 @@ form.addEventListener("submit", async function(e){
             })
         })
 
-        const response = await fetch("http://177.153.20.221:8080/iniciativa");
+        const response = await fetch("https://projetodnd.duckdns.org/iniciativa");
         const iniciativas = await response.json();
         organizaIniciativa(iniciativas);
     }

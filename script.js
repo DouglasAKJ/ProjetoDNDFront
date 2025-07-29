@@ -149,7 +149,7 @@ const carateristicas = document.getElementById("caracteristicas")
 const selectSpell = document.getElementById("selectSpell")
 
 raca.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080//ficha/raca/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/raca/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -166,7 +166,7 @@ raca.addEventListener("change", async function(){
 })
 
 aparencia.addEventListener("change", async function(){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/aparencia/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/aparencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -183,7 +183,7 @@ aparencia.addEventListener("change", async function(){
 })
 
 idiomas.addEventListener("change", async function(){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/idiomas/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/idiomas/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -200,7 +200,7 @@ idiomas.addEventListener("change", async function(){
 })
 
 background.addEventListener("change", async function(){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/background/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/background/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -217,7 +217,7 @@ background.addEventListener("change", async function(){
 })
 
 carateristicas.addEventListener("change", async function(){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/caracteristicas/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/caracteristicas/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -268,7 +268,7 @@ async function salvarCantrip(){
     return;
   }
 
-  const save = await fetch(`http://177.153.20.221:8080/ficha/adicionaSpell/${id}`, {
+  const save = await fetch(`https://projetodnd.duckdns.org/ficha/adicionaSpell/${id}`, {
          headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -350,7 +350,7 @@ function adicionarTruqueNaFicha(nome, desc, time, range, nivel) {
 }
 
 async function excluiSpell(nome, desc, time, range, nivel, elementoHTML){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/deletaSpell/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/deletaSpell/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -425,7 +425,7 @@ botaoVoltar.addEventListener("click", function(){
 })
 
   async function addAtaque(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/adicionaAtaque/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/adicionaAtaque/${id}`, {
     headers: {
       'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -458,7 +458,7 @@ botaoVoltar.addEventListener("click", function(){
     const bonus = document.getElementById(`bonusAtaque${index}`).value;
     const dano = document.getElementById(`danoAtaque${index}`).value;
 
-    const res = await fetch(`http://177.153.20.221:8080/ficha/adicionaAtaque/${id}`, {
+    const res = await fetch(`https://projetodnd.duckdns.org/ficha/adicionaAtaque/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
         'Accept': 'application/json',
@@ -491,7 +491,7 @@ botaoVoltar.addEventListener("click", function(){
 
 
   async function excluiAtaque(nome, bonus, dano, elementoHTML){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/deletaAtaque/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/deletaAtaque/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -535,7 +535,7 @@ botaoVoltar.addEventListener("click", function(){
 
 acrobaciaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profAcrobacia/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profAcrobacia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -550,7 +550,7 @@ acrobaciaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profAcrobacia/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profAcrobacia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -567,7 +567,7 @@ acrobaciaProf.addEventListener("change", async function(){
 
 arcanismoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profArcanismo/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profArcanismo/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -582,7 +582,7 @@ arcanismoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profArcanismo/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profArcanismo/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -599,7 +599,7 @@ arcanismoProf.addEventListener("change", async function(){
 
 atletismoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profAtletismo/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profAtletismo/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -614,7 +614,7 @@ atletismoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profAtletismo/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profAtletismo/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -631,7 +631,7 @@ atletismoProf.addEventListener("change", async function(){
 
 atuacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profAtuacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profAtuacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -646,7 +646,7 @@ atuacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profAtuacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profAtuacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -663,7 +663,7 @@ atuacaoProf.addEventListener("change", async function(){
 
 enganacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profEnganacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profEnganacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -678,7 +678,7 @@ enganacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profEnganacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profEnganacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -695,7 +695,7 @@ enganacaoProf.addEventListener("change", async function(){
 
 furtividadeProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profFurtividade/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profFurtividade/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -710,7 +710,7 @@ furtividadeProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profFurtividade/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profFurtividade/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -727,7 +727,7 @@ furtividadeProf.addEventListener("change", async function(){
 
 historiaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profHistoria/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profHistoria/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -742,7 +742,7 @@ historiaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profHistoria/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profHistoria/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -759,7 +759,7 @@ historiaProf.addEventListener("change", async function(){
 
 intimidacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profIntimidacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profIntimidacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -774,7 +774,7 @@ intimidacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profIntimidacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profIntimidacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -791,7 +791,7 @@ intimidacaoProf.addEventListener("change", async function(){
 
 intuicaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profIntuicao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profIntuicao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -806,7 +806,7 @@ intuicaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profIntuicao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profIntuicao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -823,7 +823,7 @@ intuicaoProf.addEventListener("change", async function(){
 
 investigacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profInvestigacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profInvestigacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -838,7 +838,7 @@ investigacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profInvestigacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profInvestigacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -855,7 +855,7 @@ investigacaoProf.addEventListener("change", async function(){
 
 lidaranimaisProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profLidarAnimais/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profLidarAnimais/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -870,7 +870,7 @@ lidaranimaisProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profLidarAnimais/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profLidarAnimais/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -887,7 +887,7 @@ lidaranimaisProf.addEventListener("change", async function(){
 
 medicinaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profMedicina/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profMedicina/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -902,7 +902,7 @@ medicinaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profMedicina/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profMedicina/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -919,7 +919,7 @@ medicinaProf.addEventListener("change", async function(){
 
 naturezaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profNatureza/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profNatureza/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -934,7 +934,7 @@ naturezaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profNatureza/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profNatureza/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -951,7 +951,7 @@ naturezaProf.addEventListener("change", async function(){
 
 percepcaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profPercepcao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profPercepcao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -966,7 +966,7 @@ percepcaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profPercepcao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profPercepcao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -983,7 +983,7 @@ percepcaoProf.addEventListener("change", async function(){
 
 persuasaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profPersuasao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profPersuasao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -998,7 +998,7 @@ persuasaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profPersuasao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profPersuasao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1015,7 +1015,7 @@ persuasaoProf.addEventListener("change", async function(){
 
 prestidigitacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profPrestidigitacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profPrestidigitacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1030,7 +1030,7 @@ prestidigitacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profPrestidigitacao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profPrestidigitacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1047,7 +1047,7 @@ prestidigitacaoProf.addEventListener("change", async function(){
 
 religiaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profReligiao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profReligiao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1062,7 +1062,7 @@ religiaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profReligiao/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profReligiao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1079,7 +1079,7 @@ religiaoProf.addEventListener("change", async function(){
 
 sobrevivenciaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profSobrevivencia/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profSobrevivencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1094,7 +1094,7 @@ sobrevivenciaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profSobrevivencia/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profSobrevivencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1111,7 +1111,7 @@ sobrevivenciaProf.addEventListener("change", async function(){
 
 forcaCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profForca/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profForca/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1127,7 +1127,7 @@ forcaCheck.addEventListener("change", async function(){
     const data = await response.json();
     forcaSave.value = data.atributos.forcaSave;
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profForca/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profForca/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1148,7 +1148,7 @@ forcaCheck.addEventListener("change", async function(){
 
 dexCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profDestreza/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profDestreza/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1164,7 +1164,7 @@ dexCheck.addEventListener("change", async function(){
     const data = await response.json();
     dexSave.value = data.atributos.destrezaSave;
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profDestreza/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profDestreza/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1185,7 +1185,7 @@ dexCheck.addEventListener("change", async function(){
 
 intCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profInteligencia/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profInteligencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1201,7 +1201,7 @@ intCheck.addEventListener("change", async function(){
     const data = await response.json();
     intSave.value = data.atributos.inteligenciaSave;
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profInteligencia/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profInteligencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1222,7 +1222,7 @@ intCheck.addEventListener("change", async function(){
 
 consCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profCons/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profCons/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1238,7 +1238,7 @@ consCheck.addEventListener("change", async function(){
     const data = await response.json();
     consSave.value = data.atributos.constituicaoSave;
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profCons/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profCons/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1259,7 +1259,7 @@ consCheck.addEventListener("change", async function(){
 
 sabCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profSabedoria/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profSabedoria/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1275,7 +1275,7 @@ sabCheck.addEventListener("change", async function(){
     const data = await response.json();
     sabSave.value = data.atributos.sabedoriaSave;
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profSabedoria/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profSabedoria/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1296,7 +1296,7 @@ sabCheck.addEventListener("change", async function(){
 
 carCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profCarisma/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profCarisma/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1312,7 +1312,7 @@ carCheck.addEventListener("change", async function(){
     const data = await response.json();
     carismaSave.value = data.atributos.carismaSave;
   } else {
-    const response = await fetch(`http://177.153.20.221:8080/ficha/profCarisma/${id}`, {
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/profCarisma/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1332,7 +1332,7 @@ carCheck.addEventListener("change", async function(){
 })
 
 classe.addEventListener("change", async function(){
-  fetch(`http://177.153.20.221:8080/ficha/${id}`,
+  fetch(`https://projetodnd.duckdns.org/ficha/${id}`,
     {
       headers:
       {
@@ -1350,7 +1350,7 @@ classe.addEventListener("change", async function(){
 })
 
 nomeChar.addEventListener("change", async function(){
-  fetch(`http://177.153.20.221:8080/ficha/${id}`,
+  fetch(`https://projetodnd.duckdns.org/ficha/${id}`,
     {
       headers:
       {
@@ -1367,7 +1367,7 @@ nomeChar.addEventListener("change", async function(){
 })
 
 classeArmadura.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraCA/${id}`,
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraCA/${id}`,
     {
       headers:
       {
@@ -1387,7 +1387,7 @@ classeArmadura.addEventListener("change", async function(){
 })
 
 deslocamento.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraDeslocamento/${id}`,
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraDeslocamento/${id}`,
     {
       headers:
       {
@@ -1407,7 +1407,7 @@ deslocamento.addEventListener("change", async function(){
 })
 
 nivel.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/${id}`,
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/${id}`,
     {
       headers: {
       'Authorization': `Bearer ${token}`,
@@ -1457,7 +1457,7 @@ nivel.addEventListener("change", async function(){
 
 
 cdMagia.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraCD/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraCD/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -1475,7 +1475,7 @@ cdMagia.addEventListener("change", async function(){
 })
 
 hpAtual.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraHp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraHp/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -1493,7 +1493,7 @@ hpAtual.addEventListener("change", async function(){
 })
 
 hpMax.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraHpMax/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraHpMax/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -1512,7 +1512,7 @@ hpMax.addEventListener("change", async function(){
 })
 
 hpTemp.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraHpTemp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraHpTemp/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -1532,7 +1532,7 @@ hpTemp.addEventListener("change", async function(){
 
 dano.addEventListener("click", async function(){
   const valorDano = parseInt(vidaAltera.value)
-  const response = await fetch(`http://177.153.20.221:8080/ficha/dano/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/dano/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -1550,7 +1550,7 @@ dano.addEventListener("click", async function(){
 
 cura.addEventListener("click", async function(){
   const valorCura = parseInt(vidaAltera.value)
-  const response = await fetch(`http://177.153.20.221:8080/ficha/cura/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/cura/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -1588,7 +1588,7 @@ function carregaAtaque(ataque, index){
     const bonus = document.getElementById(`bonusAtaque${index}`).value;
     const dano = document.getElementById(`danoAtaque${index}`).value;
 
-    const res = await fetch(`http://177.153.20.221:8080/ficha/adicionaAtaque/${id}`, {
+    const res = await fetch(`https://projetodnd.duckdns.org/ficha/adicionaAtaque/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
         'Accept': 'application/json',
@@ -1618,7 +1618,7 @@ document.addEventListener("DOMContentLoaded", async function(){
   if (!token){
         window.location.href = "loginUsuario.html"
     }
-  const res = await fetch(`http://177.153.20.221:8080/usuarios/returnUsuario`, {
+  const res = await fetch(`https://projetodnd.duckdns.org/usuarios/returnUsuario`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -1632,7 +1632,7 @@ document.addEventListener("DOMContentLoaded", async function(){
   console.log(data2)
   nomePlayer.innerHTML = data2.nome;
 
- const response = await fetch(`http://177.153.20.221:8080/ficha/${id}`, {
+ const response = await fetch(`https://projetodnd.duckdns.org/ficha/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -1771,7 +1771,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
 
 forcaAtributo.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraForca/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraForca/${id}`, {
       headers: {
       'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -1797,7 +1797,7 @@ forcaAtributo.addEventListener("change", async function(){
 )
 
 dexAtributo.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraDex/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraDex/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -1826,7 +1826,7 @@ dexAtributo.addEventListener("change", async function(){
 )
 
 consAtributo.addEventListener("change", async function(){
- const response = await fetch(`http://177.153.20.221:8080/ficha/alteraCons/${id}`, {
+ const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraCons/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -1851,7 +1851,7 @@ consAtributo.addEventListener("change", async function(){
 )
 
 intAtributo.addEventListener("change", async function(){
-  const response = await fetch(`http://177.153.20.221:8080/ficha/alteraInteligencia/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraInteligencia/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -1881,7 +1881,7 @@ intAtributo.addEventListener("change", async function(){
 )
 
 sabAtributo.addEventListener("change", async function(){
- const response = await fetch(`http://177.153.20.221:8080/ficha/alteraSab/${id}`, {
+ const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraSab/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -1910,7 +1910,7 @@ sabAtributo.addEventListener("change", async function(){
 )
 
 carismaAtributo.addEventListener("change", async function(){
- const response = await fetch(`http://177.153.20.221:8080/ficha/alteraCarisma/${id}`, {
+ const response = await fetch(`https://projetodnd.duckdns.org/ficha/alteraCarisma/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
