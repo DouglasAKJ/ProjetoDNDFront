@@ -117,7 +117,7 @@ function mostraFichas(fichas){
             </div>
             </button id="acessaFicha">
             <br>
-            <button id="apagaFicha" onclick"apagaFicha(${ficha.id})"></button>
+            <button id="apagaFicha" onclick"apagaFicha(${ficha.id})">Deletar Ficha</button>
         `
         adicionaFicha.appendChild(fichaElement)
     });
@@ -133,6 +133,8 @@ async function apagaFicha(id){
         method: 'GET',
     })
 
+    console.log("deletado ficha " + id)
+
     const ficha = await response.json()
 
     const response2 = await fetch("https://projetodnd.duckdns.org/usuarios/deletaFicha",{
@@ -147,6 +149,7 @@ async function apagaFicha(id){
 
     const fichas = await response2.json()
     mostraFichas(fichas)
+    
 
 }
 
