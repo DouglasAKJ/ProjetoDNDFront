@@ -117,7 +117,7 @@ function mostraFichas(fichas){
             </div>
             </button id="acessaFicha">
             <br>
-            <button id="apagaFicha" onclick"apagaFicha(${ficha.id})">Deletar Ficha</button>
+            <button id="apagaFicha" onclick="apagaFicha(${ficha.id})">Deletar Ficha</button>
         `
         adicionaFicha.appendChild(fichaElement)
     });
