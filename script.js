@@ -171,7 +171,7 @@ const selectSpell = document.getElementById("selectSpell")
 acrobaciaExp.addEventListener("change", async function(){
   if(this.checked){
 
-  
+  acrobaciaExp.checked = true;
   const response = await fetch(`https://projetodnd.duckdns.org/ficha/acrobaciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
@@ -184,6 +184,7 @@ acrobaciaExp.addEventListener("change", async function(){
   const data = await response.json();
   acrobacia.value = data.pericias.find(p => p.nome === "Acrobacia").valor
 } else {
+  acrobaciaExp.checked = false
   const response = await fetch(`https://projetodnd.duckdns.org/ficha/acrobaciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
@@ -2263,23 +2264,58 @@ document.addEventListener("DOMContentLoaded", async function(){
 
   //prof pericias
   acrobaciaProf.checked = data.pericias.find(p => p.nome === "Acrobacia").proficiente ? true : false;
+  acrobaciaExp.checked = data.pericias.find(p => p.nome === "Acrobacia").expertise ? true : false;
+  
   arcanismoProf.checked = data.pericias.find(p => p.nome === "Arcanismo").proficiente ? true : false;
+  arcanismoExp.checked = data.pericias.find(p => p.nome === "Arcanismo").expertise ? true : false;
+
   atletismoProf.checked = data.pericias.find(p => p.nome === "Atletismo").proficiente ? true : false;
+  atletismoExp.checked = data.pericias.find(p => p.nome === "Atletismo").expertise ? true : false;
+
   atuacaoProf.checked = data.pericias.find(p => p.nome === "Atuação").proficiente ? true : false;
+  atuacaoExp.checked = data.pericias.find(p => p.nome === "Atuação").expertise ? true : false;
+
   enganacaoProf.checked = data.pericias.find(p => p.nome === "Enganação").proficiente ? true : false;
+  enganacaoExp.checked = data.pericias.find(p => p.nome === "Enganação").expertise ? true : false;
+
   furtividadeProf.checked = data.pericias.find(p => p.nome === "Furtividade").proficiente ? true : false;
+  furtividadeExp.checked = data.pericias.find(p => p.nome === "Furtividade").expertise ? true : false;
+
   historiaProf.checked = data.pericias.find(p => p.nome === "História").proficiente ? true : false;
+  historiaExp.checked = data.pericias.find(p => p.nome === "História").expertise ? true : false;
+
   intimidacaoProf.checked = data.pericias.find(p => p.nome === "Intimidação").proficiente ? true : false;
+  intimidacaoExp.checked = data.pericias.find(p => p.nome === "Intimidação").expertise ? true : false;
+
   intuicaoProf.checked = data.pericias.find(p => p.nome === "Intuição").proficiente ? true : false;
+  intuicaoExp.checked = data.pericias.find(p => p.nome === "Intuição").expertise ? true : false;
+
   investigacaoProf.checked = data.pericias.find(p => p.nome === "Investigação").proficiente ? true : false;
+  investigacaoExp.checked = data.pericias.find(p => p.nome === "Investigação").expertise ? true : false;
+
   lidaranimaisProf.checked = data.pericias.find(p => p.nome === "Lidar com Animais").proficiente ? true : false;
+  lidaranimaisExp.checked = data.pericias.find(p => p.nome === "Lidar com Animais").expertise ? true : false;
+
   medicinaProf.checked = data.pericias.find(p => p.nome === "Medicina").proficiente ? true : false;
+  medicinaExp.checked = data.pericias.find(p => p.nome === "Medicina").expertise ? true : false;
+
   naturezaProf.checked = data.pericias.find(p => p.nome === "Natureza").proficiente ? true : false;
+  naturezaExp.checked = data.pericias.find(p => p.nome === "Natureza").expertise ? true : false;
+
   percepcaoProf.checked = data.pericias.find(p => p.nome === "Percepção").proficiente ? true : false;
+  percepcaoExp.checked = data.pericias.find(p => p.nome === "Percepção").expertise ? true : false;
+
   persuasaoProf.checked = data.pericias.find(p => p.nome === "Persuasão").proficiente ? true : false;
+  persuasaoExp.checked = data.pericias.find(p => p.nome === "Persuasão").expertise ? true : false;
+
   prestidigitacaoProf.checked = data.pericias.find(p => p.nome === "Prestidigição").proficiente ? true : false;
+  prestidigitacaoExp.checked = data.pericias.find(p => p.nome === "Prestidigição").expertise ? true : false;
+
   religiaoProf.checked = data.pericias.find(p => p.nome === "Religião").proficiente ? true : false;
+  religiaoExp.checked = data.pericias.find(p => p.nome === "Religião").expertise ? true : false;
+
   sobrevivenciaProf.checked = data.pericias.find(p => p.nome === "Sobrevivência").proficiente ? true : false;
+  sobrevivenciaExp.checked = data.pericias.find(p => p.nome === "Sobrevivência").expertise ? true : false;
 
   //ataques
       const index = data.ataques.length;
