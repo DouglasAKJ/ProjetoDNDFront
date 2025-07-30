@@ -178,7 +178,7 @@ acrobaciaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -190,7 +190,7 @@ acrobaciaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -208,7 +208,7 @@ arcanismoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -220,7 +220,7 @@ arcanismoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -238,7 +238,7 @@ atletismoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -250,7 +250,7 @@ atletismoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -268,7 +268,7 @@ atuacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -280,7 +280,7 @@ atuacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -298,7 +298,7 @@ enganacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -310,7 +310,7 @@ enganacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -328,7 +328,7 @@ furtividadeExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -340,7 +340,7 @@ furtividadeExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -358,7 +358,7 @@ historiaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -370,7 +370,7 @@ historiaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -388,7 +388,7 @@ intimidacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -400,7 +400,7 @@ intimidacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -418,7 +418,7 @@ intuicaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -430,7 +430,7 @@ intuicaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -448,7 +448,7 @@ investigacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -460,7 +460,7 @@ investigacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -478,7 +478,7 @@ lidaranimaisExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -490,7 +490,7 @@ lidaranimaisExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -508,7 +508,7 @@ medicinaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -520,7 +520,7 @@ medicinaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -538,7 +538,7 @@ naturezaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -550,7 +550,7 @@ naturezaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -568,7 +568,7 @@ percepcaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -580,7 +580,7 @@ percepcaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -598,7 +598,7 @@ persuasaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -610,7 +610,7 @@ persuasaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -628,7 +628,7 @@ prestidigitacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -640,7 +640,7 @@ prestidigitacaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -658,7 +658,7 @@ religiaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -670,7 +670,7 @@ religiaoExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
@@ -688,7 +688,7 @@ sobrevivenciaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(true)
   })
   const data = await response.json();
@@ -700,7 +700,7 @@ sobrevivenciaExp.addEventListener("change", async function(){
       'Accept': 'application/json',
       'Content-Type': 'application/json'
       },
-      method: 'POST',
+      method: 'PATCH',
       body: JSON.stringify(false)
   })
   const data = await response.json();
