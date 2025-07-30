@@ -116,9 +116,38 @@ function mostraFichas(fichas){
             <h3>Nível: ${ficha.level} </h3>
             </div>
             </button id="acessaFicha">
+            <br>
+            <button id="apagaFicha" onclick"apagaFicha(${ficha.id})"></button>
         `
         adicionaFicha.appendChild(fichaElement)
     });
+}
+
+async function apagaFicha(id){
+    const response = await fetch(`https://projetodnd.duckdns.org/ficha/${id}`, {
+         headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        method: 'GET',
+    })
+
+    const ficha = await response.json()
+
+    const response2 = await fetch("https://projetodnd.duckdns.org/usuarios/deletaFicha",{
+        headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        method: 'POST',
+        body: ficha
+    })
+
+    const fichas = await response2.json()
+    mostraFichas(fichas)
+
 }
 
 async function acessaFicha(id){
