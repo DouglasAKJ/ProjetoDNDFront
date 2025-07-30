@@ -144,7 +144,7 @@ async function apagaFicha(id){
             'Content-Type': 'application/json'
         },
         method: 'POST',
-        body: ficha
+        body: JSON.stringify(ficha)
     })
 
     const fichas = await response2.json()
