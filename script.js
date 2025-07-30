@@ -172,7 +172,7 @@ acrobaciaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/acrobaciaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/acrobaciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -184,7 +184,7 @@ acrobaciaExp.addEventListener("change", async function(){
   const data = await response.json();
   acrobacia.value = data.pericias.find(p => p.nome === "Acrobacia").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/acrobaciaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/acrobaciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -202,7 +202,7 @@ arcanismoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/arcanismoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/arcanismoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -214,7 +214,7 @@ arcanismoExp.addEventListener("change", async function(){
   const data = await response.json();
   arcanismo.value = data.pericias.find(p => p.nome === "Arcanismo").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/arcanismoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/arcanismoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -232,7 +232,7 @@ atletismoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/atletismoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/atletismoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -244,7 +244,7 @@ atletismoExp.addEventListener("change", async function(){
   const data = await response.json();
   atletismo.value = data.pericias.find(p => p.nome === "Atletismo").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/atletismoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/atletismoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -262,7 +262,7 @@ atuacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/atuacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/atuacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -274,7 +274,7 @@ atuacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   atuacao.value = data.pericias.find(p => p.nome === "Atuação").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/atuacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/atuacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -292,7 +292,7 @@ enganacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/enganacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/enganacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -304,7 +304,7 @@ enganacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   engancao.value = data.pericias.find(p => p.nome === "Enganação").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/enganacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/enganacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -322,7 +322,7 @@ furtividadeExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/furtividadeExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/furtividadeExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -334,7 +334,7 @@ furtividadeExp.addEventListener("change", async function(){
   const data = await response.json();
   furtividade.value = data.pericias.find(p => p.nome === "Furtividade").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/furtividadeExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/furtividadeExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -352,7 +352,7 @@ historiaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/historiaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/historiaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -364,7 +364,7 @@ historiaExp.addEventListener("change", async function(){
   const data = await response.json();
   historia.value = data.pericias.find(p => p.nome === "História").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/historiaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/historiaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -382,7 +382,7 @@ intimidacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/intimidacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/intimidacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -394,7 +394,7 @@ intimidacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   intimidacao.value = data.pericias.find(p => p.nome === "Intimidação").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/intimidacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/intimidacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -412,7 +412,7 @@ intuicaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/intuicaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/intuicaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -424,7 +424,7 @@ intuicaoExp.addEventListener("change", async function(){
   const data = await response.json();
   intuicao.value = data.pericias.find(p => p.nome === "Intuição").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/intuicaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/intuicaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -442,7 +442,7 @@ investigacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/investigacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/investigacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -454,7 +454,7 @@ investigacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   investigacao.value = data.pericias.find(p => p.nome === "Investigação").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/investigacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/investigacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -472,7 +472,7 @@ lidaranimaisExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/lidaranimaisExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/lidaranimaisExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -484,7 +484,7 @@ lidaranimaisExp.addEventListener("change", async function(){
   const data = await response.json();
   lidarAnimais.value = data.pericias.find(p => p.nome === "Lidar com Animais").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/lidaranimaisExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/lidaranimaisExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -502,7 +502,7 @@ medicinaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/medicinaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/medicinaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -514,7 +514,7 @@ medicinaExp.addEventListener("change", async function(){
   const data = await response.json();
   medicina.value = data.pericias.find(p => p.nome === "Medicina").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/medicinaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/medicinaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -532,7 +532,7 @@ naturezaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/naturezaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/naturezaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -544,7 +544,7 @@ naturezaExp.addEventListener("change", async function(){
   const data = await response.json();
   natureza.value = data.pericias.find(p => p.nome === "Natureza").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/naturezaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/naturezaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -562,7 +562,7 @@ percepcaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/percepcaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/percepcaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -574,7 +574,7 @@ percepcaoExp.addEventListener("change", async function(){
   const data = await response.json();
   percepcao.value = data.pericias.find(p => p.nome === "Percepção").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/percepcaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/percepcaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -592,7 +592,7 @@ persuasaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/persuasaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/persuasaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -604,7 +604,7 @@ persuasaoExp.addEventListener("change", async function(){
   const data = await response.json();
   persuasao.value = data.pericias.find(p => p.nome === "Persuasão").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/persuasaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/persuasaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -622,7 +622,7 @@ prestidigitacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/prestidigitacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/prestidigitacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -634,7 +634,7 @@ prestidigitacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   prestidigitacao.value = data.pericias.find(p => p.nome === "Prestidigitação").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/prestidigitacaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/prestidigitacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -652,7 +652,7 @@ religiaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/religiaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/religiaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -664,7 +664,7 @@ religiaoExp.addEventListener("change", async function(){
   const data = await response.json();
   religiao.value = data.pericias.find(p => p.nome === "Religião").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/religiaoExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/religiaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -682,7 +682,7 @@ sobrevivenciaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/sobrevivenciaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/sobrevivenciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -694,7 +694,7 @@ sobrevivenciaExp.addEventListener("change", async function(){
   const data = await response.json();
   sobrevivencia.value = data.pericias.find(p => p.nome === "Sobrevivência").valor
 } else {
-  const response = await fetch(`https:projetodnd.duckdns.org/ficha/sobrevivenciaExp/${id}`, {
+  const response = await fetch(`https://projetodnd.duckdns.org/ficha/sobrevivenciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
