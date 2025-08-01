@@ -960,7 +960,7 @@ async function abrirModal(nivel){
     }) 
 
     magiaEscolhida = await magias.json();
-    spells = [magiaEscolhida.results, extraSpells]
+    spells = [...magiaEscolhida.results, ...extraSpells]
 
     spells.forEach(async spell => {
       if(spell.level == nivel){
