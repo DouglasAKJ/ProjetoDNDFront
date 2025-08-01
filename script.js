@@ -950,7 +950,8 @@ async function abrirModal(nivel){
   document.getElementById("range").value = ""
   document.getElementById("desc").value = ""
   document.getElementById("levelSpell").value = ""
-  const spellsExtras = require("extra-spells.json")
+  const spellsExtras = await fetch("extra-spells.json")
+  const extraSpells = spellsExtras.json()
 
   const magias = await fetch("https://www.dnd5eapi.co/api/2014/spells", {
       headers: {
@@ -959,7 +960,7 @@ async function abrirModal(nivel){
     }) 
 
     magiaEscolhida = await magias.json();
-    spells = [magiaEscolhida.results, spellsExtras]
+    spells = [magiaEscolhida.results, extraSpells]
 
     spells.forEach(async spell => {
       if(spell.level == nivel){
