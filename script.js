@@ -958,10 +958,11 @@ async function abrirModal(nivel){
         'Accept': 'application/json'
       }
     }) 
-
+    
     magiaEscolhida = await magias.json();
     spells = [...magiaEscolhida.results, ...extraSpells]
-
+    console.log("Spells:" + spells)
+    console.log("Nivel" + nivel)
     spells.forEach(async spell => {
       if(spell.level == nivel){
       const option = document.createElement("option");
