@@ -795,25 +795,39 @@ carateristicas.addEventListener("change", async function(){
 })
 
 
-selectSpell.addEventListener("change", async function(){
-  const selected = selectSpell.value;
+  selectSpell.addEventListener("change", async function(){
+    const selected = selectSpell.value;
 
-  if (!selected) return;
+    if (!selected) return;
 
-  const res = await fetch(`https://www.dnd5eapi.co/api/2014/spells/${selected}`, {
-    headers: {
-      'Accept': 'application/json'
+    
+    const spellsExtras = await fetch("extra-spells.json")
+    const extraSpells = await spellsExtras.json()
+
+    const foundExtra = extraSpells.find(spell => spell.index === selected);
+
+    if (foundExtra){
+      spell = foundExtra
+    } else {
+      const res = await fetch(`https://www.dnd5eapi.co/api/2014/spells/${selected}`, {
+      headers: {
+        'Accept': 'application/json'
+      }
+
+    });
+
+
+    const spell = await res.json()
     }
 
-  });
+    
 
-  const spell = await res.json()
 
-  document.getElementById("castingTime").value = spell.casting_time
-  document.getElementById("range").value = spell.range
-  document.getElementById("desc").value = spell.desc
-  document.getElementById("levelSpell").value = spell.level
-})
+    document.getElementById("castingTime").value = spell.casting_time
+    document.getElementById("range").value = spell.range
+    document.getElementById("desc").value = spell.desc
+    document.getElementById("levelSpell").value = spell.level
+  })
 
 async function salvarCantrip(){
   const select = document.getElementById("selectSpell")
@@ -961,8 +975,6 @@ async function abrirModal(nivel){
     
     magiaEscolhida = await magias.json();
     spells = [...magiaEscolhida.results, ...extraSpells]
-    console.log("Spells:" + spells)
-    console.log("Nivel" + nivel)
     spells.forEach(async spell => {
       if(spell.level == nivel){
       const option = document.createElement("option");
