@@ -807,7 +807,7 @@ carateristicas.addEventListener("change", async function(){
     const foundExtra = extraSpells.find(spell => spell.index === selected);
 
     if (foundExtra){
-      spell = foundExtra
+       spell = foundExtra
     } else {
       const res = await fetch(`https://www.dnd5eapi.co/api/2014/spells/${selected}`, {
       headers: {
@@ -817,7 +817,7 @@ carateristicas.addEventListener("change", async function(){
     });
 
 
-    const spell = await res.json()
+      spell = await res.json()
     }
 
     
