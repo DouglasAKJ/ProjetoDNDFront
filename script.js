@@ -951,7 +951,7 @@ async function abrirModal(nivel){
   document.getElementById("desc").value = ""
   document.getElementById("levelSpell").value = ""
   const spellsExtras = await fetch("extra-spells.json")
-  const extraSpells = spellsExtras.json()
+  const extraSpells = await spellsExtras.json()
 
   const magias = await fetch("https://www.dnd5eapi.co/api/2014/spells", {
       headers: {
