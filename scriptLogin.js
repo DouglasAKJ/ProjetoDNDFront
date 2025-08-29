@@ -6,7 +6,7 @@ const formLogin = document.getElementById("formLogin")
 formLogin.addEventListener("submit", async function(e){
     e.preventDefault()
 
-    const response = await fetch(`https://projetodnd.duckdns.org/auth/login`, {
+    const response = await fetch(`https://06ba97efa663.ngrok-free.app /auth/login`, {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
