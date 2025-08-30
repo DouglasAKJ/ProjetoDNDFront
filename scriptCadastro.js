@@ -7,7 +7,7 @@ const formLogin = document.getElementById("formLogin")
 formCadastro.addEventListener("submit", async function (e) {
     e.preventDefault(); // impede que o form recarregue a página
 
-    const response = await fetch("https://06ba97efa663.ngrok-free.app/auth/cadastro", {
+    const response = await fetch("https://ae8716cea846.ngrok-free.app/auth/cadastro", {
         method: "POST",
         headers: {
             'Accept': 'application/json',

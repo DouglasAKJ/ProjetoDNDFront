@@ -172,7 +172,7 @@ acrobaciaExp.addEventListener("change", async function(){
   if(this.checked){
 
   acrobaciaExp.checked = true;
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/acrobaciaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/acrobaciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -185,7 +185,7 @@ acrobaciaExp.addEventListener("change", async function(){
   acrobacia.value = data.pericias.find(p => p.nome === "Acrobacia").valor
 } else {
   acrobaciaExp.checked = false
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/acrobaciaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/acrobaciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -203,7 +203,7 @@ arcanismoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/arcanismoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/arcanismoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -215,7 +215,7 @@ arcanismoExp.addEventListener("change", async function(){
   const data = await response.json();
   arcanismo.value = data.pericias.find(p => p.nome === "Arcanismo").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/arcanismoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/arcanismoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -233,7 +233,7 @@ atletismoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/atletismoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/atletismoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -245,7 +245,7 @@ atletismoExp.addEventListener("change", async function(){
   const data = await response.json();
   atletismo.value = data.pericias.find(p => p.nome === "Atletismo").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/atletismoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/atletismoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -263,7 +263,7 @@ atuacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/atuacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/atuacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -275,7 +275,7 @@ atuacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   atuacao.value = data.pericias.find(p => p.nome === "Atuação").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/atuacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/atuacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -293,7 +293,7 @@ enganacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/enganacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/enganacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -305,7 +305,7 @@ enganacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   engancao.value = data.pericias.find(p => p.nome === "Enganação").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/enganacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/enganacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -323,7 +323,7 @@ furtividadeExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/furtividadeExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/furtividadeExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -335,7 +335,7 @@ furtividadeExp.addEventListener("change", async function(){
   const data = await response.json();
   furtividade.value = data.pericias.find(p => p.nome === "Furtividade").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/furtividadeExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/furtividadeExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -353,7 +353,7 @@ historiaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/historiaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/historiaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -365,7 +365,7 @@ historiaExp.addEventListener("change", async function(){
   const data = await response.json();
   historia.value = data.pericias.find(p => p.nome === "História").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/historiaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/historiaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -383,7 +383,7 @@ intimidacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/intimidacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/intimidacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -395,7 +395,7 @@ intimidacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   intimidacao.value = data.pericias.find(p => p.nome === "Intimidação").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/intimidacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/intimidacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -413,7 +413,7 @@ intuicaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/intuicaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/intuicaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -425,7 +425,7 @@ intuicaoExp.addEventListener("change", async function(){
   const data = await response.json();
   intuicao.value = data.pericias.find(p => p.nome === "Intuição").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/intuicaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/intuicaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -443,7 +443,7 @@ investigacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/investigacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/investigacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -455,7 +455,7 @@ investigacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   investigacao.value = data.pericias.find(p => p.nome === "Investigação").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/investigacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/investigacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -473,7 +473,7 @@ lidaranimaisExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/lidaranimaisExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/lidaranimaisExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -485,7 +485,7 @@ lidaranimaisExp.addEventListener("change", async function(){
   const data = await response.json();
   lidarAnimais.value = data.pericias.find(p => p.nome === "Lidar com Animais").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/lidaranimaisExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/lidaranimaisExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -503,7 +503,7 @@ medicinaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/medicinaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/medicinaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -515,7 +515,7 @@ medicinaExp.addEventListener("change", async function(){
   const data = await response.json();
   medicina.value = data.pericias.find(p => p.nome === "Medicina").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/medicinaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/medicinaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -533,7 +533,7 @@ naturezaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/naturezaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/naturezaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -545,7 +545,7 @@ naturezaExp.addEventListener("change", async function(){
   const data = await response.json();
   natureza.value = data.pericias.find(p => p.nome === "Natureza").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/naturezaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/naturezaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -563,7 +563,7 @@ percepcaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/percepcaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/percepcaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -575,7 +575,7 @@ percepcaoExp.addEventListener("change", async function(){
   const data = await response.json();
   percepcao.value = data.pericias.find(p => p.nome === "Percepção").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/percepcaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/percepcaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -593,7 +593,7 @@ persuasaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/persuasaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/persuasaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -605,7 +605,7 @@ persuasaoExp.addEventListener("change", async function(){
   const data = await response.json();
   persuasao.value = data.pericias.find(p => p.nome === "Persuasão").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/persuasaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/persuasaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -623,7 +623,7 @@ prestidigitacaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/prestidigitacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/prestidigitacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -635,7 +635,7 @@ prestidigitacaoExp.addEventListener("change", async function(){
   const data = await response.json();
   prestidigitacao.value = data.pericias.find(p => p.nome === "Prestidigitação").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/prestidigitacaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/prestidigitacaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -653,7 +653,7 @@ religiaoExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/religiaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/religiaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -665,7 +665,7 @@ religiaoExp.addEventListener("change", async function(){
   const data = await response.json();
   religiao.value = data.pericias.find(p => p.nome === "Religião").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/religiaoExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/religiaoExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -683,7 +683,7 @@ sobrevivenciaExp.addEventListener("change", async function(){
   if(this.checked){
 
   
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/sobrevivenciaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/sobrevivenciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -695,7 +695,7 @@ sobrevivenciaExp.addEventListener("change", async function(){
   const data = await response.json();
   sobrevivencia.value = data.pericias.find(p => p.nome === "Sobrevivência").valor
 } else {
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/sobrevivenciaExp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/sobrevivenciaExp/${id}`, {
     headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -710,7 +710,7 @@ sobrevivenciaExp.addEventListener("change", async function(){
 })
 
 raca.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/raca/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/raca/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -727,7 +727,7 @@ raca.addEventListener("change", async function(){
 })
 
 aparencia.addEventListener("change", async function(){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/aparencia/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/aparencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -744,7 +744,7 @@ aparencia.addEventListener("change", async function(){
 })
 
 idiomas.addEventListener("change", async function(){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/idiomas/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/idiomas/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -761,7 +761,7 @@ idiomas.addEventListener("change", async function(){
 })
 
 background.addEventListener("change", async function(){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/background/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/background/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -778,7 +778,7 @@ background.addEventListener("change", async function(){
 })
 
 carateristicas.addEventListener("change", async function(){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/caracteristicas/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/caracteristicas/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -843,7 +843,7 @@ async function salvarCantrip(){
     return;
   }
 
-  const save = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/adicionaSpell/${id}`, {
+  const save = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/adicionaSpell/${id}`, {
          headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -925,7 +925,7 @@ function adicionarTruqueNaFicha(nome, desc, time, range, nivel) {
 }
 
 async function excluiSpell(nome, desc, time, range, nivel, elementoHTML){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/deletaSpell/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/deletaSpell/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1001,7 +1001,7 @@ botaoVoltar.addEventListener("click", function(){
 })
 
   async function addAtaque(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/adicionaAtaque/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/adicionaAtaque/${id}`, {
     headers: {
       'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -1034,7 +1034,7 @@ botaoVoltar.addEventListener("click", function(){
     const bonus = document.getElementById(`bonusAtaque${index}`).value;
     const dano = document.getElementById(`danoAtaque${index}`).value;
 
-    const res = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/adicionaAtaque/${id}`, {
+    const res = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/adicionaAtaque/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
         'Accept': 'application/json',
@@ -1067,7 +1067,7 @@ botaoVoltar.addEventListener("click", function(){
 
 
   async function excluiAtaque(nome, bonus, dano, elementoHTML){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/deletaAtaque/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/deletaAtaque/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1111,7 +1111,7 @@ botaoVoltar.addEventListener("click", function(){
 
 acrobaciaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profAcrobacia/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profAcrobacia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1126,7 +1126,7 @@ acrobaciaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profAcrobacia/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profAcrobacia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1143,7 +1143,7 @@ acrobaciaProf.addEventListener("change", async function(){
 
 arcanismoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profArcanismo/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profArcanismo/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1158,7 +1158,7 @@ arcanismoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profArcanismo/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profArcanismo/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1175,7 +1175,7 @@ arcanismoProf.addEventListener("change", async function(){
 
 atletismoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profAtletismo/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profAtletismo/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1190,7 +1190,7 @@ atletismoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profAtletismo/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profAtletismo/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1207,7 +1207,7 @@ atletismoProf.addEventListener("change", async function(){
 
 atuacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profAtuacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profAtuacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1222,7 +1222,7 @@ atuacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profAtuacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profAtuacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1239,7 +1239,7 @@ atuacaoProf.addEventListener("change", async function(){
 
 enganacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profEnganacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profEnganacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1254,7 +1254,7 @@ enganacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profEnganacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profEnganacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1271,7 +1271,7 @@ enganacaoProf.addEventListener("change", async function(){
 
 furtividadeProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profFurtividade/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profFurtividade/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1286,7 +1286,7 @@ furtividadeProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profFurtividade/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profFurtividade/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1303,7 +1303,7 @@ furtividadeProf.addEventListener("change", async function(){
 
 historiaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profHistoria/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profHistoria/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1318,7 +1318,7 @@ historiaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profHistoria/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profHistoria/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1335,7 +1335,7 @@ historiaProf.addEventListener("change", async function(){
 
 intimidacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profIntimidacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profIntimidacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1350,7 +1350,7 @@ intimidacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profIntimidacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profIntimidacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1367,7 +1367,7 @@ intimidacaoProf.addEventListener("change", async function(){
 
 intuicaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profIntuicao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profIntuicao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1382,7 +1382,7 @@ intuicaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profIntuicao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profIntuicao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1399,7 +1399,7 @@ intuicaoProf.addEventListener("change", async function(){
 
 investigacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profInvestigacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profInvestigacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1414,7 +1414,7 @@ investigacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profInvestigacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profInvestigacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1431,7 +1431,7 @@ investigacaoProf.addEventListener("change", async function(){
 
 lidaranimaisProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profLidarAnimais/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profLidarAnimais/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1446,7 +1446,7 @@ lidaranimaisProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profLidarAnimais/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profLidarAnimais/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1463,7 +1463,7 @@ lidaranimaisProf.addEventListener("change", async function(){
 
 medicinaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profMedicina/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profMedicina/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1478,7 +1478,7 @@ medicinaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profMedicina/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profMedicina/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1495,7 +1495,7 @@ medicinaProf.addEventListener("change", async function(){
 
 naturezaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profNatureza/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profNatureza/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1510,7 +1510,7 @@ naturezaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profNatureza/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profNatureza/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1527,7 +1527,7 @@ naturezaProf.addEventListener("change", async function(){
 
 percepcaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profPercepcao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profPercepcao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1542,7 +1542,7 @@ percepcaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profPercepcao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profPercepcao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1559,7 +1559,7 @@ percepcaoProf.addEventListener("change", async function(){
 
 persuasaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profPersuasao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profPersuasao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1574,7 +1574,7 @@ persuasaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profPersuasao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profPersuasao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1591,7 +1591,7 @@ persuasaoProf.addEventListener("change", async function(){
 
 prestidigitacaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profPrestidigitacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profPrestidigitacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1606,7 +1606,7 @@ prestidigitacaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profPrestidigitacao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profPrestidigitacao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1623,7 +1623,7 @@ prestidigitacaoProf.addEventListener("change", async function(){
 
 religiaoProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profReligiao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profReligiao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1638,7 +1638,7 @@ religiaoProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profReligiao/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profReligiao/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1655,7 +1655,7 @@ religiaoProf.addEventListener("change", async function(){
 
 sobrevivenciaProf.addEventListener("change", async function(){
   if (this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profSobrevivencia/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profSobrevivencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1670,7 +1670,7 @@ sobrevivenciaProf.addEventListener("change", async function(){
 
 
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profSobrevivencia/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profSobrevivencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1687,7 +1687,7 @@ sobrevivenciaProf.addEventListener("change", async function(){
 
 forcaCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profForca/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profForca/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1703,7 +1703,7 @@ forcaCheck.addEventListener("change", async function(){
     const data = await response.json();
     forcaSave.value = data.atributos.forcaSave;
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profForca/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profForca/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1724,7 +1724,7 @@ forcaCheck.addEventListener("change", async function(){
 
 dexCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profDestreza/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profDestreza/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1740,7 +1740,7 @@ dexCheck.addEventListener("change", async function(){
     const data = await response.json();
     dexSave.value = data.atributos.destrezaSave;
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profDestreza/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profDestreza/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1761,7 +1761,7 @@ dexCheck.addEventListener("change", async function(){
 
 intCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profInteligencia/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profInteligencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1777,7 +1777,7 @@ intCheck.addEventListener("change", async function(){
     const data = await response.json();
     intSave.value = data.atributos.inteligenciaSave;
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profInteligencia/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profInteligencia/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1798,7 +1798,7 @@ intCheck.addEventListener("change", async function(){
 
 consCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profCons/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profCons/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1814,7 +1814,7 @@ consCheck.addEventListener("change", async function(){
     const data = await response.json();
     consSave.value = data.atributos.constituicaoSave;
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profCons/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profCons/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1835,7 +1835,7 @@ consCheck.addEventListener("change", async function(){
 
 sabCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profSabedoria/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profSabedoria/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1851,7 +1851,7 @@ sabCheck.addEventListener("change", async function(){
     const data = await response.json();
     sabSave.value = data.atributos.sabedoriaSave;
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profSabedoria/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profSabedoria/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1872,7 +1872,7 @@ sabCheck.addEventListener("change", async function(){
 
 carCheck.addEventListener("change", async function(){
   if(this.checked){
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profCarisma/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profCarisma/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1888,7 +1888,7 @@ carCheck.addEventListener("change", async function(){
     const data = await response.json();
     carismaSave.value = data.atributos.carismaSave;
   } else {
-    const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/profCarisma/${id}`, {
+    const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/profCarisma/${id}`, {
       headers:{
       'Authorization': `Bearer ${token}`, 
       'Accept': 'application/json',
@@ -1908,7 +1908,7 @@ carCheck.addEventListener("change", async function(){
 })
 
 classe.addEventListener("change", async function(){
-  fetch(`https://06ba97efa663.ngrok-free.app/ficha/${id}`,
+  fetch(`https://ae8716cea846.ngrok-free.app/ficha/${id}`,
     {
       headers:
       {
@@ -1926,7 +1926,7 @@ classe.addEventListener("change", async function(){
 })
 
 nomeChar.addEventListener("change", async function(){
-  fetch(`https://06ba97efa663.ngrok-free.app/ficha/${id}`,
+  fetch(`https://ae8716cea846.ngrok-free.app/ficha/${id}`,
     {
       headers:
       {
@@ -1943,7 +1943,7 @@ nomeChar.addEventListener("change", async function(){
 })
 
 classeArmadura.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraCA/${id}`,
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraCA/${id}`,
     {
       headers:
       {
@@ -1963,7 +1963,7 @@ classeArmadura.addEventListener("change", async function(){
 })
 
 deslocamento.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraDeslocamento/${id}`,
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraDeslocamento/${id}`,
     {
       headers:
       {
@@ -1983,7 +1983,7 @@ deslocamento.addEventListener("change", async function(){
 })
 
 nivel.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/${id}`,
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/${id}`,
     {
       headers: {
       'Authorization': `Bearer ${token}`,
@@ -2033,7 +2033,7 @@ nivel.addEventListener("change", async function(){
 
 
 cdMagia.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraCD/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraCD/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -2051,7 +2051,7 @@ cdMagia.addEventListener("change", async function(){
 })
 
 hpAtual.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraHp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraHp/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -2069,7 +2069,7 @@ hpAtual.addEventListener("change", async function(){
 })
 
 hpMax.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraHpMax/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraHpMax/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -2088,7 +2088,7 @@ hpMax.addEventListener("change", async function(){
 })
 
 hpTemp.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraHpTemp/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraHpTemp/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -2108,7 +2108,7 @@ hpTemp.addEventListener("change", async function(){
 
 dano.addEventListener("click", async function(){
   const valorDano = parseInt(vidaAltera.value)
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/dano/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/dano/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -2126,7 +2126,7 @@ dano.addEventListener("click", async function(){
 
 cura.addEventListener("click", async function(){
   const valorCura = parseInt(vidaAltera.value)
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/cura/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/cura/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -2164,7 +2164,7 @@ function carregaAtaque(ataque, index){
     const bonus = document.getElementById(`bonusAtaque${index}`).value;
     const dano = document.getElementById(`danoAtaque${index}`).value;
 
-    const res = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/adicionaAtaque/${id}`, {
+    const res = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/adicionaAtaque/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
         'Accept': 'application/json',
@@ -2194,7 +2194,7 @@ document.addEventListener("DOMContentLoaded", async function(){
   if (!token){
         window.location.href = "loginUsuario.html"
     }
-  const res = await fetch(`https://06ba97efa663.ngrok-free.app/usuarios/returnUsuario`, {
+  const res = await fetch(`https://ae8716cea846.ngrok-free.app/usuarios/returnUsuario`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -2208,7 +2208,7 @@ document.addEventListener("DOMContentLoaded", async function(){
   console.log(data2)
   nomePlayer.innerHTML = data2.nome;
 
- const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/${id}`, {
+ const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/${id}`, {
     headers:
         {
       'Authorization': `Bearer ${token}`,
@@ -2382,7 +2382,7 @@ document.addEventListener("DOMContentLoaded", async function(){
 
 
 forcaAtributo.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraForca/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraForca/${id}`, {
       headers: {
       'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -2408,7 +2408,7 @@ forcaAtributo.addEventListener("change", async function(){
 )
 
 dexAtributo.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraDex/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraDex/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -2437,7 +2437,7 @@ dexAtributo.addEventListener("change", async function(){
 )
 
 consAtributo.addEventListener("change", async function(){
- const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraCons/${id}`, {
+ const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraCons/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -2462,7 +2462,7 @@ consAtributo.addEventListener("change", async function(){
 )
 
 intAtributo.addEventListener("change", async function(){
-  const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraInteligencia/${id}`, {
+  const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraInteligencia/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -2492,7 +2492,7 @@ intAtributo.addEventListener("change", async function(){
 )
 
 sabAtributo.addEventListener("change", async function(){
- const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraSab/${id}`, {
+ const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraSab/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
@@ -2521,7 +2521,7 @@ sabAtributo.addEventListener("change", async function(){
 )
 
 carismaAtributo.addEventListener("change", async function(){
- const response = await fetch(`https://06ba97efa663.ngrok-free.app/ficha/alteraCarisma/${id}`, {
+ const response = await fetch(`https://ae8716cea846.ngrok-free.app/ficha/alteraCarisma/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
