@@ -48,12 +48,20 @@ document.addEventListener("DOMContentLoaded", async function(){
     })
 
     if(response.ok){
-        const fichas = await response.json();
-        if(fichas.length === 0){
+        const text = await response.text();
+        console.log(text)
+
+        try{
+            const fichas = await response.json();
+            if(fichas.length === 0){
 
         } else {
             mostraFichas(fichas)
         }
+        } catch(e) {
+            console.error("Não é JSON:", e);
+        }
+        
 
     } else {
         console.log(response.status)
