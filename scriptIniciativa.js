@@ -9,7 +9,7 @@ botaoVoltar.addEventListener("click", function(){
 })
 
 botaoLimpar.addEventListener("click", async function(){
-    const response = await fetch("http://localhost:8080/iniciativa/deleta", {
+    const response = await fetch("https://67624d376d30.ngrok-free.app/iniciativa/deleta", {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ botaoLimpar.addEventListener("click", async function(){
 })
 
 document.addEventListener("DOMContentLoaded", async function(){
-    const response2 = await fetch("http://localhost:8080/iniciativa", {
+    const response2 = await fetch("https://67624d376d30.ngrok-free.app/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ form.addEventListener("submit", async function(e){
             const nome = document.getElementById("nome").value;
             const iniciativa = document.getElementById("iniciativa").value;
             const hp = document.getElementById("hp").value;
-            const response = await fetch("http://localhost:8080/iniciativa", {
+            const response = await fetch("https://67624d376d30.ngrok-free.app/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ form.addEventListener("submit", async function(e){
 
             const data = await response.json()
 
-            const response2 = await fetch("http://localhost:8080/iniciativa", {
+            const response2 = await fetch("https://67624d376d30.ngrok-free.app/iniciativa", {
                 headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ form.addEventListener("submit", async function(e){
     }
 
     async function deletaId(id){
-        const response = await fetch(`http://localhost:8080/iniciativa/deletaIniciativa/${id}`, {
+        const response = await fetch(`https://67624d376d30.ngrok-free.app/iniciativa/deletaIniciativa/${id}`, {
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ form.addEventListener("submit", async function(e){
         const hpInput = document.getElementById(`hp-${id}`);
         const novoHP = parseInt(hpInput.value);
 
-        await fetch(`http://localhost:8080/iniciativa/${id}`, {
+        await fetch(`https://67624d376d30.ngrok-free.app/iniciativa/${id}`, {
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -122,7 +122,7 @@ form.addEventListener("submit", async function(e){
             })
         })
 
-        const response = await fetch("http://localhost:8080/iniciativa");
+        const response = await fetch("https://67624d376d30.ngrok-free.app/iniciativa");
         const iniciativas = await response.json();
         organizaIniciativa(iniciativas);
     }

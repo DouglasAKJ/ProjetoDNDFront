@@ -6,7 +6,7 @@ const formLogin = document.getElementById("formLogin")
 formLogin.addEventListener("submit", async function(e){
     e.preventDefault()
 
-    const response = await fetch(`http://localhost:8080/auth/login`, {
+    const response = await fetch(`https://67624d376d30.ngrok-free.app/auth/login`, {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
